@@ -542,14 +542,14 @@
                                             <div class="elementor-element elementor-element-94342a9 elementor-widget elementor-widget-heading" data-id="94342a9" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        Iván <br>Méndez
+                                                        Gabriela <br>Barrón
                                                     </h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-5747a07 elementor-widget elementor-widget-heading" data-id="5747a07" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        Griselda<br>Olayo
+                                                        Martín<br>Vázquez
                                                     </h2>
                                                 </div>
                                             </div>
@@ -569,13 +569,13 @@
                                             <div class="elementor-element elementor-element-fed0f64 elementor-widget elementor-widget-heading" data-id="fed0f64" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                         Israel   <br>Uscanga
+                                                         Gabriela   <br>Esquer
                                                     </h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-08c5950 elementor-widget elementor-widget-heading" data-id="08c5950" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default">Angélica <br> olayo </h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">Victor <br> Vizcaino </h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -593,7 +593,7 @@
                                             </div>
                                             <div class="elementor-element elementor-element-8d7fc97 elementor-widget elementor-widget-heading" data-id="8d7fc97" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2 class="elementor-heading-title elementor-size-default">Manuel <br> olayo </h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">Guadalupe <br> Castillo </h2>
                                                     
                                                 </div>
                                                 
@@ -602,7 +602,7 @@
                                             <div class="elementor-element elementor-element-4016c21 elementor-widget elementor-widget-heading" data-id="4016c21" data-element_type="widget" data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
                                                     <h2 class="elementor-heading-title elementor-size-default">
-                                                        Jenifer<br>Migue
+                                                        Manuel<br>Llanez
                                                     </h2>
                                                 </div>
                                             </div>
@@ -1720,12 +1720,12 @@
                                     <p>ASISTENCIA</p>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-11ed49f5 elementor-widget elementor-widget-text-editor" data-id="11ed49f5" data-element_type="widget" data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <p>¡Queremos Compartir contigo este momento especial!</p>
-                                    <p>Por favor apóyanos confirmando tu asistencia.</p>
-                                </div>
-                            </div>
+                            <div class="elementor-element elementor-element-11ed49f5 elementor-widget elementor-widget-text-editor" data-id="11ed49f5" data-element_type="widget" data-widget_type="text-editor.default" style="background-color: rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 10px;">
+    <div class="elementor-widget-container">
+        <p>¡Mamá y Papá merecen un dia libre!</p>
+        <p>Agreadecemos tu presencia sin niños.</p>
+    </div>
+</div>
                             <div class="elementor-element elementor-element-f733933 elementor-widget elementor-widget-spacer" data-id="f733933" data-element_type="widget" data-widget_type="spacer.default">
                                 <div class="elementor-widget-container">
                                     <div class="elementor-spacer">
@@ -1764,10 +1764,6 @@
           <label for="form-field-respuesta-1">Lo siento, no podré asistir.</label>
         </span>
       </div>
-    </div>
-    <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-invitados elementor-col-100">
-      <label for="form-field-invitados" class="elementor-field-label">Nombre(s) de acompañante(s)</label>
-      <textarea class="elementor-field-textual elementor-field  elementor-size-sm" name="form_fields[invitados]" id="form-field-invitados" rows="4" placeholder="Nombre y apellido"></textarea>
     </div>
     <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-celular elementor-col-100">
       <label for="form-field-celular" class="elementor-field-label">Número de celular</label>
@@ -1816,7 +1812,6 @@
     boton.addEventListener("click", function () {
       const nombre = document.querySelector("#form-field-nombre").value.trim();
       const respuesta = document.querySelector("input[name='form_fields[respuesta]']:checked")?.value || '';
-      const invitados = document.querySelector("#form-field-invitados").value.trim();
       const celular = document.querySelector("#form-field-celular").value.trim();
 
       if (!nombre || !respuesta) {
@@ -1824,7 +1819,7 @@
         return;
       }
 
-      const mensaje = `*Confirmación de Asistencia*\n\n👤 *Nombre:* ${nombre}\n✅ *Respuesta:* ${respuesta}\n👥 *Acompañante(s):* ${invitados}\n📱 *Número:* ${celular}`;
+      const mensaje = `*Confirmación de Asistencia*\n\n👤 *Nombre:* ${nombre}\n✅ *Respuesta:* ${respuesta}\n📱 *Número:* ${celular}`;
       const numeroWhatsApp = "16623695913";
       const enlace = `https://wa.me/52${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
       window.open(enlace, "_blank");
@@ -1887,7 +1882,7 @@
                             
                             <div class="elementor-element elementor-element-3a8c416 elementor-widget elementor-widget-heading" data-id="3a8c416" data-element_type="widget" data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default" style="font-family: 'Times New Roman', Times, serif; color: #be4167;">Formal o <br> Vaquero</h2>
+                                    <h2 class="elementor-heading-title elementor-size-default" style="font-family: 'Times New Roman', Times, serif; color: #be4167;">Formal</h2>
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-d4ba0cb elementor-widget elementor-widget-heading" data-id="d4ba0cb" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeInDown&quot;}" data-widget_type="heading.default">
